@@ -4,8 +4,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "tsc && node ./dist/eval-sandbox-tests.js",
-    "build": "tsc"
+    "test": "npm run eslint && npm run build && node ./dist/eval-sandbox-tests.js",
+    "build": "tsc",
+    "eslint": "npx eslint src"
   },
   "keywords": [],
   "author": "",
